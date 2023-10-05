@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+app.config['SQLALCHEMY_BINDS'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #postgres://lionel_kasembeli_user:uDab0goDF3Lo66TOLYBKJzSRbKYQFFo6@dpg-ckfj2oo4sbec73coven0-a.oregon-postgres.render.com/lionel_kasembeli
 
